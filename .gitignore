@@ -1,0 +1,28 @@
+# Node modules
+node_modules/
+
+# Env files
+.env
+.env.*
+
+# Logs
+*.log
+npm-debug.log*
+
+# Mac system files
+.DS_Store
+
+# Ollama cache (if any custom scripts)
+ollama_cache/
+ollama_downloads/
+
+# VS Code settings (optional)
+.vscode/
+
+# Output files
+output/
+test-results/
+*.test.js
+
+# OS-specific
+Thumbs.db
