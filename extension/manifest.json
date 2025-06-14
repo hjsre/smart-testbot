@@ -1,0 +1,28 @@
+{
+    "manifest_version": 3,
+    "name": "Smart TestBot Recorder",
+    "version": "1.0",
+    "description": "Record clicks and inputs to generate test cases using Smart TestBot",
+    "permissions": [
+        "scripting",
+        "activeTab",
+        "downloads",
+        "storage"
+    ],
+    "action": {
+        "default_popup": "popup.html"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "<all_urls>"
+            ],
+            "js": [
+                "content.js"
+            ]
+        }
+    ],
+    "host_permissions": [
+        "<all_urls>"
+    ]
+}
