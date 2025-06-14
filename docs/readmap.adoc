@@ -1,0 +1,35 @@
+= Smart TestBot Roadmap
+:toc:
+:icons: font
+
+== 🚀 Project Vision
+
+Smart TestBot aims to automate test creation using AI. The goal is to provide developers with instant, framework-specific tests generated from user input, recorded browser interactions, or pull request metadata.
+
+== ✅ Completed Features
+
+* [x] CLI tool to generate test from natural language
+* [x] Playwright + Cypress output support
+* [x] File output and automatic saving
+* [x] Browser extension to record user flow
+* [x] CLI tool to read user-flow.json from Downloads folder
+* [x] Framework toggle in both CLI and user-flow workflows
+
+== 🟡 In Progress
+
+* Integrate prompt templates into shared module
+* Improve selector precision in extension (e.g. nth-child, data attributes)
+
+== 🔜 Upcoming
+
+* Web UI to paste user flow or description and get downloadable test
+* GitHub PR comment bot to suggest tests based on code changes
+* Test runner to validate generated output
+* Open source release with install guide and usage examples
+
+== 📌 Long-Term Ideas
+
+* VS Code extension
+* API for bulk test generation
+* Model fine-tuning for stable test structure
+* Recording test assertions through browser actions
