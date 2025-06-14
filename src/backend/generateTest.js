@@ -1,8 +1,12 @@
 import fetch from 'node-fetch'; // or use axios
+import readline from 'readline';
 
-const prompt = `Write a Playwright test that logs into Gmail and checks for new emails.`;
+const rl = readline.createInterface({
+    input: process.stdin,
+    output: process.stdout
+});
 
-async function generateTest() {
+rl.question('Describe your test case: ', async (userInput) => {
     const response = await fetch('http://127.0.0.1:11434/api/generate', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
@@ -16,6 +20,6 @@ async function generateTest() {
     const data = await response.json();
     console.log('\nGenerated Test Code:\n');
     console.log(data.response);
-}
 
-generateTest();
+    rl.close();
+});
