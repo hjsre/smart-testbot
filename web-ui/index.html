@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Smart TestBot</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Smart TestBot</h1>
+  <form id="test-form">
+    <label for="framework">Select Framework:</label>
+    <select id="framework" name="framework">
+      <option value="playwright">Playwright</option>
+      <option value="cypress">Cypress</option>
+    </select>
+
+    <label for="input-text">Paste test description or user flow:</label>
+    <textarea id="input-text" name="input-text" rows="10" placeholder="e.g., Log in to Twitter and post a tweet."></textarea>
+
+    <button type="submit">Generate Test</button>
+  </form>
+
+  <h2>Generated Test Code</h2>
+  <pre id="output"></pre>
+  <button id="download-btn" style="display:none;">Download Test Code</button>
+
+  <script src="app.js"></script>
+</body>
+</html>
